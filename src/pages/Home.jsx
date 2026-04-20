@@ -17,7 +17,7 @@ const Home = () => {
   const dispatch=useDispatch()
 
   useEffect(()=>{
-    dispatch(getProducts({keyword:""}))
+    dispatch(getProducts({keyword:"",limit:4}))
   },[dispatch])
 
   useEffect(()=>{

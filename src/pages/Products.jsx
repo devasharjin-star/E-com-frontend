@@ -65,7 +65,7 @@ const Products = () => {
     // ✅ Fetch
     useEffect(() => {
         dispatch(getProducts({ keyword, page, category }));
-    }, [dispatch, keyword, page, category]);
+    }, [dispatch, keyword, page, category],error);
 
     // ✅ Error Handling (FIXED)
     useEffect(() => {
